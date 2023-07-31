@@ -1,5 +1,5 @@
 #page title
-page_title                                : Casas Argentina                                          # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : Casas Argentina - Alquiler, compra y venta de propiedades.                                         # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
 # App Info
 ios_app_id                                : 1095407441                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
@@ -20,7 +20,7 @@ enable_smart_app_banner                   : true                                
 
 
 # Information About Yourself
-your_name                                 : Juan Ré                              
+your_name                                 : Juan                              
 your_link                                 : 
 your_city                                 : Uruguay                                
 email_address                             : juanpare@gmail.com
@@ -79,15 +79,15 @@ features                                  :
 
 
 # Theme Settings
-topbar_color                              : "#000000"
-topbar_transparency                       : 0.1
-topbar_title_color                        : "#ffffff"
+topbar_color                              : "#FFFFFF"
+topbar_transparency                       : 1
+topbar_title_color                        : "#000000"
 
 cover_image                               :                     # Replace with alternative image path or image URL.
-cover_overlay_color                       : "#363b3d"
-cover_overlay_transparency                : 0.8
+cover_overlay_color                       : "#FFFFFF"
+cover_overlay_transparency                : 1
 
-device_color                              : blue                                     # Set to: blue, black, yellow, coral or white.
+device_color                              : blue                                    # Set to: blue, black, yellow, coral or white.
 
 body_background_color                     : "#ffffff"
 
