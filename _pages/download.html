@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección de App</title>
+    <script type="text/javascript">
+        function redirectUser() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Redirige a Google Play para dispositivos Android
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.juan.CasasAR";
+                return;
+            }
+
+            // Redirige a la App Store para dispositivos iOS
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/ar/app/casas-argentina/id1095407441?uo=4";
+                return;
+            }
+
+            // Si no es ninguno de los anteriores, puedes redirigir a una página por defecto o mostrar contenido
+            document.getElementById("defaultContent").style.display = "block";
+        }
+    </script>
+</head>
+<body onload="redirectUser()">
+
+<div id="defaultContent" style="display:none;">
+    <h1>Bienvenido a Nuestra App</h1>
+    <p>Visita nuestra app en la <a href="https://play.google.com/store/apps/details?id=tu.app.id">Google Play Store</a> o en la <a href="https://apps.apple.com/app/idtu.app.id">App Store de Apple</a>.</p>
+</div>
+
+</body>
+</html>
